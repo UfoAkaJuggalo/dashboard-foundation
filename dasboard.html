@@ -6,6 +6,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation-icons.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -13,53 +15,34 @@
 
     <header class="dashboard-header">
         <div class="row">
-            <div class="small-4 column">
-                <div class="small-3 column">
-                    <div class="dashboard-logo"></div>
-                </div>
-                <div class="small-3 column">
-                    <div class="dashboard-userPicture"></div>
-                </div>
-                <div class="small-6 column">
-                    <div class="row">
-                        <div class="small-12 column">
-                            <div class="dashboard-userName"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="small-3 column">
-                            <div class="dashboard-message"></div>
-                        </div>
-                        <div class="small-3 column"></div>
-                    </div>
-                </div>
-                <div class="small-4 column">
-                    <nav class="dashboard-menu">
-                        <ul>
-                            <li><a href="#">menu1</a></li>
-                            <li><a href="#">menu2</a></li>
-                            <li><a href="#">menu3</a></li>
-                            <li><a href="#">menu4</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="dashboard-verticalAlgin">
                 <div class="small-4 column">
                     <div class="row">
-                        <div class="small-9 column">
-                            <div class="dashboard-serchField"></div>
-                        </div>
-                        <div class="small-1 column">
-                            <div class="dashboard-searchButton"></div>
-                        </div>
-                        <div class="small-1 column">
-                            <div class="dashboard-verticalSpacer"></div>
-                        </div>
-                        <div class="small-1 column">
-                            <div class="dashboard-logoutButton"></div>
+                        <div class="dashboard-user">
+                            <div class="small-3 column">
+                                <img src="img\efi_logo.png">
+                            </div>
+                            <div class="small-3 column">
+                                <img src="img\100x100_o.jpg">
+                            </div>
+                            <div class="small-6 column">
+                                <div class="row">
+                                    <p class="dashboard-userName">Jan Kowalski</p>
+                                </div>
+                                <div class="row">
+                                    <div class="dashboard-userIcons">
+                                        <div class="small-3 column"><i class="fi-mail"></i></div>
+                                        <div class="small-3 column"><i class="fi-asterisk"></i></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
+
     </header>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
