@@ -4,22 +4,40 @@
     background: #13bdd2;
     color: #fff;
     width: 100%;
-    padding: 1.5vw;
-    .dashboard-headerLogo {
-        text-align: right;
-    }
-    .dashboard-headerUser {
-        text-align: left;
-        background-color: #f0f;
-        height: 100%;
-        display: flex;
-    }
-    img {
-        border: 1px solid #5ad1e0;
-        -webkit-border-radius: 8px;
-        -moz-border-radius: 8px;
-        border-radius: 8px;
-        width: 75%;
-        margin: 0px 2px;
+    .dashboard-headerLeft {
+        margin: 1.5vw;
+        img {
+            border: 1px solid #5ad1e0;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+            width: 75%;
+            margin: 0px 2px;
+        }
+        .dashboard-headerLogo {
+            text-align: right;
+        }
+        .dashboard-headerUser {
+            position: relative;
+            p {
+                font-size: 1.5rem;
+            }
+            &>div {
+                bottom: -10px;
+                position: absolute;
+                font-size: 1.8rem;
+                .ion-email {
+                    position: relative;
+                    span {
+                        position: absolute;
+                        top: 0px;
+                        right: -50%;
+                        background-color: #e81c7b;
+                        font-style: normal;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
     }
 }
