@@ -4,6 +4,34 @@
     background: #13bdd2;
     color: #fff;
     width: 100%;
+    nav {
+        height: 100%;
+        .dashboard-menuItem {
+            position: relative;
+            div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .dashboard-menu {
+            background-color: #000;
+            &::after {
+                background-color: #000;
+                content: "";
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                -webkit-border-radius: 12px;
+                -moz-border-radius: 12px;
+                border-radius: 12px;
+            }
+        }
+    }
     .dashboard-headerLeft {
         margin: 1.5vw;
         img {
