@@ -1,8 +1,28 @@
 @import "ionicons";
+//  COLORS DEFINITIONS
+$dash-header-background: #13bdd2;
+$dash-header-primary: #fff;
+$dash-header-secondary: #e81c7b;
+$dash-header-imgBorder: #5ad1e0;
+$dash-header-menuActive: #000;
+$dash-main-background: #d9dada;
+$dash-main-primary: #fff;
+$dash-main-secondary: #13bdd2;
+$dash-main-tertiary: #e81c7b;
+$dash-main-quaternary: #01cc01;
+$dash-main-icon: #b2b2b2;
+$dash-main-iconActive: #fff;
+$dash-main-text1: #000;
+$dash-main-text2: #6eb512;
+$dash-main-textActive: #fff;
+body {
+    background-color: $dash-main-background;
+}
+
 .dashboard-header {
     font-family: 'Roboto', Arial, sans-serif;
-    background: #13bdd2;
-    color: #fff;
+    background: $dash-header-background;
+    color: $dash-header-primary;
     width: 100%;
     nav {
         height: 100%;
@@ -16,9 +36,9 @@
             }
         }
         .dashboard-menu-active {
-            background-color: #000;
+            background-color: $dash-header-menuActive;
             &::after {
-                background-color: #000;
+                background-color: $dash-header-menuActive;
                 content: "";
                 width: 24px;
                 height: 24px;
@@ -42,7 +62,7 @@
     .dashboard-headerLeft {
         margin: 1.5vw;
         img {
-            border: 1px solid #5ad1e0;
+            border: 1px solid $dash-header-imgBorder;
             -webkit-border-radius: 8px;
             -moz-border-radius: 8px;
             border-radius: 8px;
@@ -67,7 +87,7 @@
                         position: absolute;
                         top: 0px;
                         right: -50%;
-                        background-color: #e81c7b;
+                        background-color: $dash-header-secondary;
                         font-style: normal;
                         font-weight: bold;
                     }
@@ -76,8 +96,34 @@
         }
     }
     .dashboard-headerRight {
+        font-size: 2.5em;
+        input[type=search],
+        input[type=search]:focus {
+            font-size: 0.5em;
+            text-align: right;
+            background-color: rgba(0, 0, 0, 0);
+            border: 0 none;
+            outline: none;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            padding: 0px;
+            margin: 0px;
+            color: $dash-header-primary;
+        }
         input[type=submit] {
+            text-align: left;
             font-family: $ionicons-font-family;
+            background-color: rgba(0, 0, 0, 0);
+            border: 0 none;
+            outline: none;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            color: $dash-header-primary;
+        }
+        .dashboard-logOut {
+            margin-left: 1em;
+            color: $dash-header-secondary;
+            border-left: 1px solid $dash-header-primary;
         }
     }
 }
