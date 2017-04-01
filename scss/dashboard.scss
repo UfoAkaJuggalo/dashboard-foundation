@@ -127,3 +127,32 @@ body {
         }
     }
 }
+
+.main {
+    margin-top: 2em;
+    h1 {
+        font-size: 2.8em;
+        font-weight: 550;
+        text-align: left;
+    }
+    .dashboard-main-add {
+        display: inline-block;
+        font-size: 1em;
+        font-weight: 600;
+        top: -0.4rem;
+        position: relative;
+        padding-right: 1em;
+    }
+}
+
+.dashboard-algin-left {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.dashboard-algin-right {
+    text-align: right;
+    margin-right: 0;
+    padding-right: 0;
+}
