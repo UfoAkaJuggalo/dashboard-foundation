@@ -15,26 +15,23 @@ $dash-main-iconActive: #fff;
 $dash-main-text1: #000;
 $dash-main-text2: #6eb512;
 $dash-main-textActive: #fff;
+$dash-fontfamily-normal: 'Roboto',
+Arial,
+sans-serif;
+$dash-fontfamily-condensed: 'Roboto Condensed',
+Arial,
+sans-serif;
 body {
     background-color: $dash-main-background;
 }
 
 .dashboard-header {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: $dash-fontfamily-normal;
     background: $dash-header-background;
     color: $dash-header-primary;
     width: 100%;
     nav {
         height: 100%;
-        .dashboard-menuItem {
-            position: relative;
-            div {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
         .dashboard-menu-active {
             background-color: $dash-header-menuActive;
             &::after {
@@ -54,6 +51,13 @@ body {
         .dashboard-menuItem {
             text-align: center;
             font-size: 2.5em;
+            position: relative;
+            div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
             p {
                 font-size: 0.3em;
             }
@@ -81,17 +85,6 @@ body {
                 bottom: -10px;
                 position: absolute;
                 font-size: 1.8rem;
-                .ion-email {
-                    position: relative;
-                    span {
-                        position: absolute;
-                        top: 0px;
-                        right: -50%;
-                        background-color: $dash-header-secondary;
-                        font-style: normal;
-                        font-weight: bold;
-                    }
-                }
             }
         }
     }
@@ -130,29 +123,67 @@ body {
 
 .main {
     margin-top: 2em;
+    font-family: $dash-fontfamily-normal;
     h1 {
         font-size: 2.8em;
-        font-weight: 550;
+        font-weight: 300;
         text-align: left;
     }
-    .dashboard-main-add {
+    .dashboard-main-topMargin {
+        margin-top: 1em;
+    }
+    .dashboard-main-label {
         display: inline-block;
         font-size: 1em;
-        font-weight: 600;
-        top: -0.4rem;
+        font-weight: normal;
+        top: -0.4em;
         position: relative;
         padding-right: 1em;
+    }
+    .dashboard-main-head2 {
+        font-family: $dash-fontfamily-condensed;
+        font-size: 1.2em;
+        text-align: left;
+        font-weight: 300;
+        line-height: 1.1em;
+        p {
+            line-height: 1.3em;
+        }
+    }
+}
+
+.switch {
+    p {
+        color: $dash-main-text1;
+        display: inline-block;
+        font-weight: normal;
+        font-size: 1.2em;
+        top: -0.6em;
+        position: relative;
+        padding-right: 0.6em;
     }
 }
 
 .dashboard-algin-left {
     text-align: left;
-    margin-left: 0;
-    padding-left: 0;
 }
 
 .dashboard-algin-right {
     text-align: right;
-    margin-right: 0;
-    padding-right: 0;
+}
+
+.dashboard-nopadding {
+    padding: 0;
+}
+
+.icon {
+    position: relative;
+    span {
+        position: absolute;
+        top: 0px;
+        right: -50%;
+        background-color: $dash-header-secondary;
+        font-style: normal;
+        font-weight: bold;
+    }
 }

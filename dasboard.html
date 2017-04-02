@@ -6,7 +6,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Banq</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -90,27 +91,50 @@
     </header>
     <div class="main">
         <div class="row align-justify">
-            <div class="small-12 medium-10 columns">
+            <div class="small-12 medium-10 columns dashboard-nopadding">
                 <div class="row align-bottom">
                     <div class="columns dashboard-algin-left">
                         <h1>Finance life stream</h1>
                     </div>
                     <div class="columns dashboard-algin-right">
-                        <p class="dashboard-main-add">Add</p>
+                        <p class="dashboard-main-label">Add</p>
                         <a class="button small">BANK</a>
                         <a class="button small">PAYMENT</a>
                     </div>
                 </div>
-                <div class="row align-justify align-middle">
-                </div>
-                <div class="row">
-                    <div class="small-12 columns">
+                <div class="row align-justify align-middle dashboard-main-head2">
+                    <div class="small-6 medium-3 columns dashboard-algin-left">
+                        <p>Balance<br>
+                            <strong>7 200,34</strong> PLN</p>
+                    </div>
+                    <div class="small-6 medium-3 columns">
+                        <p>Available funds<br>
+                            <strong>7 200,34</strong> PLN</p>
+                    </div>
+                    <div class="small-6 medium-3 columns">
+                        <p>Scheduled payments<br>
+                            <strong>1 620,25</strong> PLN</p>
+                    </div>
+                    <div class="columns dashboard-algin-right">
+                        <div class="switch">
+                            <p>Account analysis</p>
+                            <input class="switch-input" id="yes-no" type="checkbox" name="AccountAnalysisSwitch">
+                            <label class="switch-paddle" for="yes-no" style="color: black;">
+                                <span class="switch-active" aria-hidden="true">ON</span>
+                                <span class="switch-inactive" aria-hidden="true">OFF</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="small-12 medium-6 columns">
+                <div>
+                    <img src="img\example_placeholder.png" alt="placeholder">
+                </div>
+                <div class="row dashboard-main-topMargin">
+                    <div class="small-12 medium-6 columns dashboard-algin-left">
+                        <p class="dashboard-main-label">Products</p>
                     </div>
-                    <div class="small-12 medium-6 columns">
+                    <div class="small-12 medium-6 columns dashboard-algin-left">
+                        <p class="dashboard-main-label">History</p>
                     </div>
                 </div>
             </div>
