@@ -119,7 +119,7 @@
                         <div class="switch">
                             <p>Account analysis</p>
                             <input class="switch-input" id="yes-no" type="checkbox" name="AccountAnalysisSwitch">
-                            <label class="switch-paddle" for="yes-no" style="color: black;">
+                            <label class="switch-paddle" for="yes-no">
                                 <span class="switch-active" aria-hidden="true">ON</span>
                                 <span class="switch-inactive" aria-hidden="true">OFF</span>
                             </label>
@@ -130,23 +130,92 @@
                     <img src="img\example_placeholder.png" alt="placeholder">
                 </div>
                 <div class="row dashboard-main-topMargin">
-                    <div class="small-12 medium-6 columns dashboard-algin-left">
+                    <div class="medium-12 large-6 columns dashboard-algin-left">
                         <p class="dashboard-main-label">Products</p>
-                        <div class="row align-stretch">
-                            <div class="small-6 columns dashboard-main-apla">
-                                <div class="row align-stretch align-left">
-                                    <div class="small-3 columns align-self-middle" style="text-align: center;">
-                                        <i class="icon ion-card" style="text-align: center;"></i>
+                        <div class="row small-collapse">
+                            <div class="small-12 medium-6 columns">
+                                <div class="dashboard-main-apla">
+                                    <div class="row">
+                                        <div class="small-3 column align-self-middle dashboard-main-apla-icon">
+                                            <i class="icon ion-card"></i>
+                                        </div>
+                                        <div class="column">
+                                            <p>Wallets [3]<br>500,00 PLN</p>
+                                        </div>
                                     </div>
-                                    <div class="columns align-self-middle" style="background-color: yellow;">
-                                        <p style="margin: 0;">Wallets [3]<br>500,00 PLN</p>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-6 columns">
+                                <div class="dashboard-main-apla">
+                                    <div class="row">
+                                        <div class="small-3 column align-self-middle dashboard-main-apla-icon">
+                                            <i class="icon ion-lock-combination">
+                                                <span class="badge" id="messageCount">2</span>
+                                            </i>
+
+                                        </div>
+                                        <div class="column">
+                                            <p>Deposits [2]<br>10 000,00 PLN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-6 columns">
+                                <div class="dashboard-main-apla">
+                                    <div class="row">
+                                        <div class="small-3 column align-self-middle dashboard-main-apla-icon">
+                                            <i class="icon ion-cash"></i>
+                                        </div>
+                                        <div class="column">
+                                            <p>Accounts<br>7 200,00 PLN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-6 columns">
+                                <div class="dashboard-main-apla">
+                                    <div class="row">
+                                        <div class="small-3 column align-self-middle dashboard-main-apla-icon">
+                                            <i class="icon ion-connection-bars">
+                                                <span class="badge" id="messageCount">7</span>
+                                            </i>
+
+                                        </div>
+                                        <div class="column">
+                                            <p>Funds [3]<br>7 000,00 PLN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-6 columns">
+                                <div class="dashboard-main-apla dashboard-main-apla-active">
+                                    <div class="row">
+                                        <div class="small-3 column align-self-middle dashboard-main-apla-icon">
+                                            <i class="icon ion-reply-all"></i>
+                                        </div>
+                                        <div class="column">
+                                            <p>Bank loans<br>-127 000,00 PLN</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="small-12 medium-6 columns dashboard-algin-left">
+                    <div class="medium-12 large-6 columns dashboard-algin-left">
                         <p class="dashboard-main-label">History</p>
+                        <div class="dashboard-main-history">
+                            <div class="row">
+                                <div class="small-2 column align-self-middle">
+                                    29.06
+                                </div>
+                                <div class="column align-self-middle">
+                                    <p>Gas Station Shell. Warsaw, Wolowska street...<br> Gas <i class="icon ion-chevron-down"></i></p>
+                                </div>
+                                <div class="small-3 column align-self-middle">
+                                    <strong>-100,00 </strong>PLN
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

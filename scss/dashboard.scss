@@ -21,6 +21,13 @@ sans-serif;
 $dash-fontfamily-condensed: 'Roboto Condensed',
 Arial,
 sans-serif;
+@mixin dash-border-radius() {
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    -ms-border-radius: 0.25em;
+    border-radius: 0.25em;
+}
+
 body {
     background-color: $dash-main-background;
 }
@@ -37,15 +44,15 @@ body {
             &::after {
                 background-color: $dash-header-menuActive;
                 content: "";
-                width: 24px;
-                height: 24px;
+                width: 0.5em;
+                height: 0.5em;
                 position: absolute;
                 bottom: 0;
                 left: 50%;
                 transform: translate(-50%, 50%);
-                -webkit-border-radius: 12px;
-                -moz-border-radius: 12px;
-                border-radius: 12px;
+                -webkit-border-radius: 0.25em;
+                -moz-border-radius: 0.25em;
+                border-radius: 0.25em;
             }
         }
         .dashboard-menuItem {
@@ -64,14 +71,14 @@ body {
         }
     }
     .dashboard-headerLeft {
-        margin: 1.5vw;
+        margin: 1.5em;
         img {
             border: 1px solid $dash-header-imgBorder;
-            -webkit-border-radius: 8px;
-            -moz-border-radius: 8px;
-            border-radius: 8px;
+            -webkit-border-radius: 0.2em;
+            -moz-border-radius: 0.2em;
+            border-radius: 0.2em;
             width: 75%;
-            margin: 0px 2px;
+            margin: 0px 0.1em;
         }
         .dashboard-headerLogo {
             text-align: right;
@@ -130,7 +137,34 @@ body {
         text-align: left;
     }
     .dashboard-main-apla {
+        @include dash-border-radius();
         background-color: $dash-main-primary;
+        padding: 1em;
+        margin: 0 1em 1em 0;
+        .dashboard-main-apla-icon {
+            text-align: center;
+            font-size: 2.2em;
+            color: $dash-main-icon;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    .dashboard-main-apla-active {
+        background-color: $dash-main-secondary;
+        .dashboard-main-apla-icon {
+            color: $dash-main-iconActive;
+        }
+    }
+    .dashboard-main-history {
+        @include dash-border-radius();
+        background-color: $dash-main-primary;
+        font-size: 0.9em;
+        margin: 0 1em;
+        ;
+        p {
+            margin: 0;
+        }
     }
     .dashboard-main-topMargin {
         margin-top: 1em;
@@ -142,6 +176,7 @@ body {
         top: -0.4em;
         position: relative;
         padding-right: 1em;
+        margin-bottom: auto;
     }
     .dashboard-main-head2 {
         font-family: $dash-fontfamily-condensed;
@@ -164,6 +199,9 @@ body {
         top: -0.6em;
         position: relative;
         padding-right: 0.6em;
+    }
+    .switch-paddle {
+        color: $dash-main-text1;
     }
 }
 
