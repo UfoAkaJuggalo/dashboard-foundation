@@ -136,6 +136,9 @@ body {
         font-weight: 300;
         text-align: left;
     }
+    .dashboard-main-paddingLeft {
+        padding-left: 0.9375rem;
+    }
     .dashboard-main-apla {
         @include dash-border-radius();
         background-color: $dash-main-primary;
@@ -160,10 +163,46 @@ body {
         @include dash-border-radius();
         background-color: $dash-main-primary;
         font-size: 0.9em;
-        margin: 0 1em;
-        ;
+        font-weight: 500;
+        margin: 0;
         p {
             margin: 0;
+        }
+        .row {
+            font-family: $dash-fontfamily-condensed;
+            padding: 0.6em 0;
+            border-bottom: 2px solid $dash-main-background;
+            div:nth-child(1) {
+                text-align: center;
+                padding-left: 0.9375rem;
+                padding-right: 0;
+                font-size: 1.1em;
+            }
+            div:nth-child(2) {
+                display: inline;
+                p {
+                    display: inline;
+                }
+                i {
+                    color: $dash-main-secondary;
+                }
+                .dashboard-main-invert {
+                    color: $dash-main-primary;
+                    background-color: $dash-main-secondary;
+                    padding: 0.1em 0.5em;
+                    font-family: $dash-fontfamily-normal;
+                    margin: 0 0.5em;
+                }
+            }
+            div:nth-child(3) {
+                font-size: 1.1em;
+                text-align: center;
+                padding-right: 0.9375rem;
+                padding-left: 0;
+                .dashboard-main-green {
+                    color: $dash-main-text2;
+                }
+            }
         }
     }
     .dashboard-main-topMargin {
