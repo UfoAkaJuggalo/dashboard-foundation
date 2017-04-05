@@ -32,98 +32,100 @@ body {
     background-color: $dash-main-background;
 }
 
-.dashboard-header {
-    font-family: $dash-fontfamily-normal;
+header {
     background: $dash-header-background;
-    color: $dash-header-primary;
-    width: 100%;
-    nav {
-        height: 100%;
-        .dashboard-menu-active {
-            background-color: $dash-header-menuActive;
-            &::after {
+    .dashboard-header {
+        font-family: $dash-fontfamily-normal;
+        color: $dash-header-primary;
+        width: 100%;
+        nav {
+            height: 100%;
+            .dashboard-menu-active {
                 background-color: $dash-header-menuActive;
-                content: "";
-                width: 0.5em;
-                height: 0.5em;
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translate(-50%, 50%);
-                -webkit-border-radius: 0.25em;
-                -moz-border-radius: 0.25em;
-                border-radius: 0.25em;
+                &::after {
+                    background-color: $dash-header-menuActive;
+                    content: "";
+                    width: 0.5em;
+                    height: 0.5em;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                    -webkit-border-radius: 0.25em;
+                    -moz-border-radius: 0.25em;
+                    border-radius: 0.25em;
+                }
+            }
+            .dashboard-menuItem {
+                text-align: center;
+                font-size: 2.5em;
+                position: relative;
+                div {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                p {
+                    font-size: 0.3em;
+                }
             }
         }
-        .dashboard-menuItem {
-            text-align: center;
+        .dashboard-headerLeft {
+            margin: 1.5em;
+            img {
+                border: 1px solid $dash-header-imgBorder;
+                -webkit-border-radius: 0.2em;
+                -moz-border-radius: 0.2em;
+                border-radius: 0.2em;
+                width: 75%;
+                margin: 0px 0.1em;
+            }
+            .dashboard-headerLogo {
+                text-align: right;
+            }
+            .dashboard-headerUser {
+                position: relative;
+                p {
+                    font-size: 1.5rem;
+                }
+                &>div {
+                    bottom: -10px;
+                    position: absolute;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        .dashboard-headerRight {
             font-size: 2.5em;
-            position: relative;
-            div {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            input[type=search],
+            input[type=search]:focus {
+                font-size: 0.5em;
+                text-align: right;
+                background-color: rgba(0, 0, 0, 0);
+                border: 0 none;
+                outline: none;
+                box-shadow: none;
+                -webkit-box-shadow: none;
+                padding: 0px;
+                margin: 0px;
+                color: $dash-header-primary;
             }
-            p {
-                font-size: 0.3em;
+            input[type=submit] {
+                text-align: left;
+                font-family: $ionicons-font-family;
+                background-color: rgba(0, 0, 0, 0);
+                border: 0 none;
+                outline: none;
+                box-shadow: none;
+                -webkit-box-shadow: none;
+                color: $dash-header-primary;
             }
-        }
-    }
-    .dashboard-headerLeft {
-        margin: 1.5em;
-        img {
-            border: 1px solid $dash-header-imgBorder;
-            -webkit-border-radius: 0.2em;
-            -moz-border-radius: 0.2em;
-            border-radius: 0.2em;
-            width: 75%;
-            margin: 0px 0.1em;
-        }
-        .dashboard-headerLogo {
-            text-align: right;
-        }
-        .dashboard-headerUser {
-            position: relative;
-            p {
-                font-size: 1.5rem;
+            .dashboard-logOut {
+                margin-left: 1em;
+                color: $dash-header-secondary;
+                border-left: 1px solid $dash-header-primary;
             }
-            &>div {
-                bottom: -10px;
-                position: absolute;
-                font-size: 1.8rem;
-            }
-        }
-    }
-    .dashboard-headerRight {
-        font-size: 2.5em;
-        input[type=search],
-        input[type=search]:focus {
-            font-size: 0.5em;
-            text-align: right;
-            background-color: rgba(0, 0, 0, 0);
-            border: 0 none;
-            outline: none;
-            box-shadow: none;
-            -webkit-box-shadow: none;
-            padding: 0px;
-            margin: 0px;
-            color: $dash-header-primary;
-        }
-        input[type=submit] {
-            text-align: left;
-            font-family: $ionicons-font-family;
-            background-color: rgba(0, 0, 0, 0);
-            border: 0 none;
-            outline: none;
-            box-shadow: none;
-            -webkit-box-shadow: none;
-            color: $dash-header-primary;
-        }
-        .dashboard-logOut {
-            margin-left: 1em;
-            color: $dash-header-secondary;
-            border-left: 1px solid $dash-header-primary;
         }
     }
 }
